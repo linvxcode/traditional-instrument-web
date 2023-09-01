@@ -1,0 +1,10 @@
+* text=auto
+*.blade.php diff=html
+*.css diff=css
+*.html diff=html
+*.md diff=markdown
+*.php diff=php
+/.github export-ignore
+CHANGELOG.md export-ignore
+public/vid filter=lfs diff=lfs merge=lfs -text
+public/vid/Tutorial[[:space:]]bermain[[:space:]]Serune[[:space:]]Kale.mp4 filter=lfs diff=lfs merge=lfs -text

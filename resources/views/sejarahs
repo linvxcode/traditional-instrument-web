@@ -1,0 +1,34 @@
+@extends('layouts.main')
+
+
+@section('sejarah')
+                
+     <div class="con flex justify-center">   
+               <ul class="sco">
+                        <li>
+                            <a href="instrument">Back To Instrument</a>
+                        </li>
+               
+     </div>
+ 
+
+<!-- http://127.0.0.1:8000/ -->
+
+
+<div class="">
+<div class="column">
+<div class="cardd">
+    <h2 class="text-center font-bold mt-5"> {{ $Insserune["name"] }} </h2>
+    <p class="text-center mx-5 mr-32 ml-32 mt-5"> {{ $Insserune["isi"] }} </p>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+        
+@endsection

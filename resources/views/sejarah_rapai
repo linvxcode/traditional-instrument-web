@@ -1,0 +1,44 @@
+@extends('layouts.main')
+
+
+@section('sejarah')
+
+<div class="con flex justify-center">   
+               <ul class="sco">
+                        <li>
+                            <a href="instrument">Back To Instrument</a>
+                        </li>
+               
+     </div>
+ 
+@foreach ($sejarah_rapai as $sejarahr) 
+<div class="row">
+<div class="column ">
+<div class="cardd border-2 border-black mx-5 mr-5 mt-5">
+    <h2 class="text-center font-bold mt-5"> {{ $sejarahr["name"] }} </h2>
+    <p class="text-justify p-2 mt-5"> {{ $sejarahr["isi"] }} </p>
+
+</div>
+</div>
+</div>  
+<div class="row">
+<div class="column">
+<div class="cardd border-2 mx-5 mr-5 mt-10">
+    <h2 class="text-center mt-5 font-bold"> {{ $sejarahr["jenis"] }} </h2>
+    <p class="text-justify p-2 mt-5 "> {{ $sejarahr["isi1"] }} 
+        <br> {{ $sejarahr["jenis1"] }} </br>
+        <br> {{ $sejarahr["jenis2"] }} </br>
+        <br> {{ $sejarahr["jenis3"] }} </br>
+        <br> {{ $sejarahr["jenis4"] }} </br>
+        <br> {{ $sejarahr["jenis5"] }} </br>
+        <br> {{ $sejarahr["jenis6"] }} </br>
+    </p>
+</div>
+</div>
+</div>
+
+@endforeach
+
+
+
+@endsection
